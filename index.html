@@ -1,329 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>portfolio design</title>
-
-    <!-- box design -->
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="description" content="Athulkrishna PP - Full-stack Developer Portfolio">
+    <title>Athulkrishna PP | Full-stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-
 <body>
-
-  <!-- header design -->
-
-  <header class="header">
-
-    <a href="#" class="logo">Portfolio<span>.</span></a>
-    <i class='bx bx-menu' id="menu-icon"></i>
-
-    <nav class="navbar">
-
-      <a href="#home"class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#skills">skills</a>
-      <a href="#contact">Contact</a>
-
-    </nav>
-
-
-
-  </header>
-
-  <!-- home section design  -->
-
-  <section class="home" id="home">
-
-    <div class="home-content">
-
-      <h3>Hello, It's Me</h3>
-      <h1>Athul</h1>
-      <h3>And I'm a <span class="multiple-text"></span></h3>
-      <p>Hello! as a Computer Science Student,
-      I'm Driven by my Passion for Technology, my Dedication to Lifelong Learning, and my Commitment to Making a Difference.
-      I'm Eager to Embark on this Exciting Journey, Continuously Expanding my Horizons, and Contributing to the Ever-Evolving World of Computer Science.
-      </p>
-
-      <div class="social-media">
-
-       <a href="https://www.facebook.com/athulkrishnapp.athulkrishnapp"><i class='bx bxl-facebook-circle'></i></a>
-       <a href="https://instagram.com/mr_de.coder___?igshid=OTk0YzhjMDVlZA=="><i class='bx bxl-instagram' ></i></a>
-       <a href="https://wa.me/918590294752"><i class='bx bxl-whatsapp' ></i></a>
-       <a href="https://github.com/athulkrishnapp"><i class='bx bxl-github'></i></a>
-       <a href="https://www.linkedin.com/in/athulkrishna-p-p-423913274"><i class='bx bxl-linkedin'></i></a> 
-
-      </div>
-
-      <a href="/cv/ATHULKRISHNA P P.pdf"class="btn">Dowload CV</a>
-
+    <!-- Tech Background -->
+    <div class="tech-background">
+        <svg class="circuit-pattern" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="circuit-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                    <line x1="0" y1="20" x2="100" y2="20" stroke="hsl(217, 91%, 60%)" stroke-width="0.5" opacity="0.3"/>
+                    <line x1="0" y1="50" x2="100" y2="50" stroke="hsl(217, 91%, 60%)" stroke-width="0.5" opacity="0.3"/>
+                    <line x1="0" y1="80" x2="100" y2="80" stroke="hsl(217, 91%, 60%)" stroke-width="0.5" opacity="0.3"/>
+                    <line x1="30" y1="0" x2="30" y2="100" stroke="hsl(217, 91%, 60%)" stroke-width="0.5" opacity="0.3"/>
+                    <line x1="70" y1="0" x2="70" y2="100" stroke="hsl(217, 91%, 60%)" stroke-width="0.5" opacity="0.3"/>
+                    <circle cx="30" cy="20" r="2" fill="hsl(217, 91%, 60%)" opacity="0.5"/>
+                    <circle cx="70" cy="50" r="2" fill="hsl(217, 91%, 60%)" opacity="0.5"/>
+                    <circle cx="30" cy="80" r="2" fill="hsl(217, 91%, 60%)" opacity="0.5"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#circuit-pattern)"/>
+        </svg>
+        <div class="floating-box box-1"></div>
+        <div class="floating-box box-2"></div>
+        <div class="floating-box box-3"></div>
+        <div class="glowing-orb orb-1"></div>
+        <div class="glowing-orb orb-2"></div>
     </div>
 
-    <div class="home-img">
+    <!-- Navigation -->
+    <header class="nav-header" id="nav-header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">AP</a>
+            
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
 
-      <img class="athul" src="images/athul.jpg" alt="">
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
 
-    </div>
-
-  </section>
-
-  <!-- about section -->
-
-  <section class="about"id="about">
-
-    <div class="about-img" >
-
-      <img class="zoro" src="/images/zoro.jpg" alt="">
-
-    </div>
-
-    <div class="about-content">
-
-      <h2 class="heading">About <span>Me</span>.</h2>
-      <h3>Frontend Developer</h3>
-      <p>Hello, my name is Athulkrishna P P. I am an undergraduate BCA student at BVM Holy Cross College Cherpunkal with a 
-      strong passion for technology and a deep curiosity about its endless possibilities. I hail from Kottayam, Kerala. Through my 
-      studies, I have acquired a solid foundation in programming languages such as C and C++, along with a strong 
-      understanding of algorithms, data structures, web development, and software engineering. Consequently, I have honed my 
-      problem-solving skills and gained practical experience in the field. Currently, I am diligently working towards becoming a 
-      proficient Frontend Developer while continuously expanding my knowledge in this domain.
-      </p>
-
-      <a href="about.html"class="btn"> Read More</a>
-
-    </div>
-
-  </section>
-
-  <!-- services -->
-
-  <section class="services" id="services">
-
-    <h2 class="heading">My <span>Services</span>.</h2>
-
-    <div class="services-container">
-
-     <div class="services-box">
-        <i class='bx bx-code-alt' ></i>
-        <h3>Web Development</h3>
-        <p> </p>
-        <a href="/web.html" class="btn">Read More</a>
-      </div>
-
-      <div class="services-box">
-        <i class='bx bxs-paint' ></i>
-        <h3>Web Designing</h3>
-        <p> </p>
-        <a href="/webdes.html" class="btn">Read More</a>
-      </div>
-
-     <div class="services-box">
-        <i class='bx bxs-book-content'></i>
-        <h3>S/W Development</h3>
-        <p> </p>
-        <a href="/sw.html" class="btn">Read More</a>
-      </div>
-    
-     <div class="services-box">
-        <i class='bx bx-image-alt' ></i>
-        <h3>Photo Editing</h3>
-        <p> </p>
-        <a href="/img.html" class="btn">Read More</a>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- skills -->
-
-  <section class="skills" id="skills">
-
-    <h2 class="heading">My <span>Skills</span>.</h2>
-
-    <div class="skills-container">
-
-
-      <div class="skills-box">
-
-        <img src="/images/C-progamming.jpg" alt="">
-
-        <div class="skills-layer">
-          <h4> C Programming</h4>
-          <p>I have a proficient grasp of C programming, 
-          operating at an intermediate level of expertise.
-          </p>
-          <a href="/certifications.html"><i class='bx bx-link-external'></i></a>
-
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#contact" class="mobile-link">Contact</a>
         </div>
+    </header>
 
-      </div>
-   
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-greeting">Hi, my name is</p>
+                    <h1 class="hero-title">Athulkrishna PP</h1>
+                    <h2 class="hero-subtitle">I build things for the web</h2>
+                    <p class="hero-description">
+                        I'm a full-stack developer specializing in building exceptional digital experiences.
+                        Currently focused on creating accessible, human-centered products.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            Get In Touch
+                        </button>
+                        <button class="btn btn-outline">View Projects</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="skills-box">
-        
-        <img src="/images/c++.jpeg" alt="">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="gradient-text">01.</span> About Me
+                    <div class="title-line"></div>
+                </h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm Athulkrishna, a passionate developer who loves creating things that live on
+                            the internet. My interest in web development started back in 2018 when I decided to
+                            build my first website.
+                        </p>
+                        <p>
+                            Fast-forward to today, and I've had the privilege of working on various projects ranging
+                            from e-commerce platforms to complex web applications. My main focus these days is
+                            building accessible, performant products.
+                        </p>
+                        <p>
+                            I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I'm
+                            not coding, you'll find me exploring new technologies and contributing to open-source.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="skills-layer">
+        <!-- Projects Section -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="gradient-text">02.</span> Featured Projects
+                    <div class="title-line"></div>
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <svg class="project-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">Full-stack online store with payment integration and inventory management</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Stripe</span>
+                        </div>
+                    </div>
 
-          <h4> C++</h4>
-          <p>I have a proficient grasp of C++ programming, 
-          operating at an intermediate level of expertise.</p>
-          <a href="/certifications.html"><i class='bx bx-link-external'></i></a>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <svg class="project-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">Collaborative project management tool with real-time updates</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Next.js</span>
+                            <span class="tech-badge">Supabase</span>
+                            <span class="tech-badge">Tailwind</span>
+                        </div>
+                    </div>
 
-        </div>
-        
-      </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <svg class="project-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">Real-time weather data visualization with interactive maps</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">API Integration</span>
+                            <span class="tech-badge">Chart.js</span>
+                            <span class="tech-badge">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="gradient-text">03.</span> Skills & Technologies
+                    <div class="title-line"></div>
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                            <path d="M9 3v18"></path>
+                        </svg>
+                        <h3 class="skill-title">Frontend</h3>
+                        <ul class="skill-list">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>Next.js</li>
+                        </ul>
+                    </div>
 
-      <div class="skills-box">
-        
-        <img src="/images/python.jpeg" alt="">
+                    <div class="skill-card">
+                        <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                        <h3 class="skill-title">Backend</h3>
+                        <ul class="skill-list">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>REST APIs</li>
+                            <li>GraphQL</li>
+                        </ul>
+                    </div>
 
-        <div class="skills-layer">
-         <h4>Python</h4>
-          <p>I have a foundational understanding of Python programming,
-          operating at a basic level of proficiency.</p>
-          <a href="/certifications.html"><i class='bx bx-link-external'></i></a>
+                    <div class="skill-card">
+                        <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                        <h3 class="skill-title">Database</h3>
+                        <ul class="skill-list">
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>Supabase</li>
+                            <li>Redis</li>
+                        </ul>
+                    </div>
 
-        </div>
-        
-      </div>
+                    <div class="skill-card">
+                        <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <h3 class="skill-title">Tools</h3>
+                        <ul class="skill-list">
+                            <li>Git</li>
+                            <li>Docker</li>
+                            <li>VS Code</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="section section-alt">
+            <div class="container contact-container">
+                <h2 class="section-title center">
+                    <span class="gradient-text">04.</span> Get In Touch
+                </h2>
+                <p class="contact-description">
+                    I'm currently looking for new opportunities. Whether you have a question or just want to
+                    say hi, I'll try my best to get back to you!
+                </p>
+                <button class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                    Say Hello
+                </button>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-      <div class="skills-box">
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with HTML, CSS & JavaScript</p>
+            <p>&copy; <span id="year"></span> Athulkrishna PP. All rights reserved.</p>
+        </footer>
+    </main>
 
-        <img src="/images/html2.jpg" alt="">
-  
-        <div class="skills-layer">
-
-         <h4> HTML</h4>
-         <p>I am proficient in HTML at an intermediate level, allowing me to create 
-         and structure web content effectively.</p>
-         <a href="/certifications.html"><i class='bx bx-link-external'></i></a>
-
-        </div>
-        
-      </div> 
-
-
-      <div class="skills-box">
-        
-        <img src="/images/css.jpeg" alt="">
-
-        <div class="skills-layer">
-
-          <h4>CSS</h4>
-          <p>I possess a basic knowledge of CSS, enabling me to style and customize web
-          content with fundamental proficiency.</p>
-          <a href="/certifications.html"><i class='bx bx-link-external'></i></a>
-
-        </div>
-        
-      </div>
-
-
-      <div class="skills-box">
-        
-        <img src="/images/java.jpg" alt="">
-
-        <div class="skills-layer">
-
-          <h4>Java Script</h4>
-          <p>I have a basic knowledge of JavaScript, allowing me to build simple
-          interactive components and enhance web functionality.</p>
-          <a href="/certifications.html"><i class='bx bx-link-external'></i></a>
-
-        </div>
-    
-      </div> 
-    
-    </div>
-
-
-  </section>
-
-  <!-- contacts -->
-
-  <section class="contact"id="contact">
-
-    <h2 class="heading">Contact <span>Me</span>.</h2>
-
-    <form id="submit-form" action="" >
-
-      <div class="input-box">
-
-       <input type="text" name="name" placeholder="Full Name">
-       <input type="email" name="emailaddress"placeholder="Email Address">
-
-      </div>
-
-      <div class="input-box">
-
-        <input type="number"name="mobilenumber" placeholder="Mobile Number">
-        <input type="text" name="Subject"placeholder="Subject">
-
-      </div>
-
-      <textarea name="message" id="message" cols="30" rows="10"placeholder="Your Message..."></textarea>
-      <input type="submit" value="Send Message" class="btn">
-
-    </form>
-
-  </section>
-
-  <!-- footer -->
-
-  <footer class="footer">
-
-    <div class="footer-text">
-
-     <pre> <p>Copyright &copy; 2023 by Mr_de.coder___    |   All Rights Reserved.</p></pre>
-
-    </div> 
-
-    <div class="footer-iconTop">
-
-      <a href="#home"><i class='bx bx-chevron-up-circle' ></i></a>
-
-    </div>
-
-  </footer>
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-  <script>
-    $("#submit-form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbzPPZIV2ppAdN5xgocHW6nx0YQMXKuAUZs4-SZPYkDWmGL3mKQHJaHD0miP_qN_LHzSCw/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Form submitted successfully")
-                window.location.reload()
-                //window.location.href="https://google.com"
-            },
-            error:function (err){
-                alert("Something Error")
-
-            }
-        })
-    })
-</script>
-  <script src="/js/script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
