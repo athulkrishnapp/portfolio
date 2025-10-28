@@ -96,8 +96,25 @@ animatedElements.forEach(el => {
 });
 
 // Prevent hero section from being animated
-const heroSection = document.querySelector('.hero-section');
+const heroSection = document.querySelector('.hero-section .hero-content');
 if (heroSection) {
     heroSection.style.opacity = '1';
     heroSection.style.transform = 'translateY(0)';
 }
+
+// --- NEW: Typed.js Logic (Hero Section Title) ---
+document.addEventListener("DOMContentLoaded", function () {
+    const heroNameTyped = document.getElementById("hero-name");
+    if (heroNameTyped) {
+        const typed = new Typed("#hero-name", {
+            strings: ["Athulkrishna PP"],
+            typeSpeed: 70, // Speed of typing
+            backSpeed: 50, // Speed of erasing
+            backDelay: 2000, // Pause before erasing (2 seconds)
+            loop: true, // Set to true to loop infinitely
+            showCursor: true, // Show the typing cursor
+            cursorChar: '|',
+            autoInsertCss: true // Let Typed.js handle the cursor blinking
+        });
+    }
+});

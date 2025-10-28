@@ -8,7 +8,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Tech Background -->
+    
+    <div class="particle-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
     <div class="tech-background">
         <svg class="circuit-pattern" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -32,10 +49,9 @@
         <div class="glowing-orb orb-2"></div>
     </div>
 
-    <!-- Navigation -->
     <header class="nav-header" id="nav-header">
         <nav class="nav-container">
-            <a href="#home" class="logo">AP</a>
+            <a href="#home" class="logo">it'z Me Athu!</a>
             
             <div class="nav-links" id="nav-links">
                 <a href="#home" class="nav-link">Home</a>
@@ -79,34 +95,41 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
         <section id="home" class="hero-section">
             <div class="container">
                 <div class="hero-content">
                     <p class="hero-greeting">Hi, my name is</p>
-                    <h1 class="hero-title">Athulkrishna PP</h1>
+                    <h1 class="hero-title"><span id="hero-name"></span></h1>
                     <h2 class="hero-subtitle">I build things for the web</h2>
                     <p class="hero-description">
-                        I'm a full-stack developer specializing in building exceptional digital experiences.
-                        Currently focused on creating accessible, human-centered products.
+                        I'm a self-motivated and curious developer specializing in building exceptional digital experiences.
+                        Committed to continuous improvement and effective collaboration.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn btn-primary">
+                        <a href="mailto:athulkrishnapp5833@gmail.com" class="btn btn-primary">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                             </svg>
                             Get In Touch
-                        </button>
-                        <button class="btn btn-outline">View Projects</button>
+                        </a>
+                        <a href="#projects" class="btn btn-outline">View Projects</a>
+                        
+                        <a href="Athulkrishna_P_P_CV.pdf" class="btn btn-outline" download="Athulkrishna_P_P_CV.pdf">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download CV
+                        </a>
+                        
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title">
@@ -116,18 +139,13 @@
                 <div class="about-grid">
                     <div class="about-text">
                         <p>
-                            Hello! I'm Athulkrishna, a passionate developer who loves creating things that live on
-                            the internet. My interest in web development started back in 2018 when I decided to
-                            build my first website.
+                            Hello! I'm Athulkrishna, a self-motivated and curious developer with a strong desire to learn, grow, and contribute meaningfully.
                         </p>
                         <p>
-                            Fast-forward to today, and I've had the privilege of working on various projects ranging
-                            from e-commerce platforms to complex web applications. My main focus these days is
-                            building accessible, performant products.
+                            My academic journey includes a Bachelor of ComputerApplications (BCA) from BVM Holy Cross College, where I achieved 87.97%, and I am currently pursuing an MCA at SJCET, Palai.
                         </p>
                         <p>
-                            I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I'm
-                            not coding, you'll find me exploring new technologies and contributing to open-source.
+                            I've gained practical, full-stack development experience during an internship at DISHASOFT INFO SOLUTIONS, where I contributed to a real-time web application for my BCA main project.
                         </p>
                     </div>
                     <div class="about-image">
@@ -137,7 +155,6 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="section section-alt">
             <div class="container">
                 <h2 class="section-title">
@@ -159,13 +176,11 @@
                                 </svg>
                             </a>
                         </div>
-                        <h3 class="project-title">E-Commerce Platform</h3>
-                        <p class="project-description">Full-stack online store with payment integration and inventory management</p>
+                        <h3 class="project-title">Online Digital Library</h3>
+                        <p class="project-description">A web app with login-based material sharing for students and staff.</p>
                         <div class="project-tech">
-                            <span class="tech-badge">React</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">PostgreSQL</span>
-                            <span class="tech-badge">Stripe</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
                         </div>
                     </div>
 
@@ -183,13 +198,10 @@
                                 </svg>
                             </a>
                         </div>
-                        <h3 class="project-title">Task Management App</h3>
-                        <p class="project-description">Collaborative project management tool with real-time updates</p>
+                        <h3 class="project-title">DABUS (Bus Tracker App)</h3>
+                        <p class="project-description">Flutter-based real-time GPS bus tracking system.</p>
                         <div class="project-tech">
-                            <span class="tech-badge">TypeScript</span>
-                            <span class="tech-badge">Next.js</span>
-                            <span class="tech-badge">Supabase</span>
-                            <span class="tech-badge">Tailwind</span>
+                            <span class="tech-badge">Flutter</span>
                         </div>
                     </div>
 
@@ -207,20 +219,41 @@
                                 </svg>
                             </a>
                         </div>
-                        <h3 class="project-title">Weather Dashboard</h3>
-                        <p class="project-description">Real-time weather data visualization with interactive maps</p>
+                        <h3 class="project-title">E-Ration</h3>
+                        <p class="project-description">Digital ration shop management platform.</p>
                         <div class="project-tech">
-                            <span class="tech-badge">React</span>
-                            <span class="tech-badge">API Integration</span>
-                            <span class="tech-badge">Chart.js</span>
-                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <svg class="project-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Sahaayikha</h3>
+                        <p class="project-description">A web app for mutual aid, enabling item sharing and disaster relief coordination.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">SQLite</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" class="section">
             <div class="container">
                 <h2 class="section-title">
@@ -235,10 +268,10 @@
                         </svg>
                         <h3 class="skill-title">Frontend</h3>
                         <ul class="skill-list">
-                            <li>React</li>
-                            <li>TypeScript</li>
-                            <li>Tailwind CSS</li>
-                            <li>Next.js</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Flutter</li>
                         </ul>
                     </div>
 
@@ -251,10 +284,11 @@
                         </svg>
                         <h3 class="skill-title">Backend</h3>
                         <ul class="skill-list">
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>REST APIs</li>
-                            <li>GraphQL</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>PHP</li>
+                            <li>Django</li>
+                            <li>Flask</li>
                         </ul>
                     </div>
 
@@ -264,12 +298,12 @@
                             <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
                             <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
                         </svg>
-                        <h3 class="skill-title">Database</h3>
+                        <h3 class="skill-title">Data & Database</h3>
                         <ul class="skill-list">
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                            <li>Supabase</li>
-                            <li>Redis</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>MySQL</li>
+                            <li>SQLite</li>
                         </ul>
                     </div>
 
@@ -278,19 +312,17 @@
                             <polyline points="16 18 22 12 16 6"></polyline>
                             <polyline points="8 6 2 12 8 18"></polyline>
                         </svg>
-                        <h3 class="skill-title">Tools</h3>
+                        <h3 class="skill-title">Tools & OS</h3>
                         <ul class="skill-list">
+                            <li>Linux</li>
                             <li>Git</li>
-                            <li>Docker</li>
                             <li>VS Code</li>
-                            <li>Figma</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="section section-alt">
             <div class="container contact-container">
                 <h2 class="section-title center">
@@ -300,20 +332,20 @@
                     I'm currently looking for new opportunities. Whether you have a question or just want to
                     say hi, I'll try my best to get back to you!
                 </p>
-                <button class="btn btn-primary">
+                <a href="mailto:athulkrishnapp5833@gmail.com" class="btn btn-primary">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                     </svg>
                     Say Hello
-                </button>
+                </a>
                 <div class="social-links">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                         </svg>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://linkedin.com/in/athulkrishnapp" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                             <rect x="2" y="9" width="4" height="12"></rect>
@@ -324,13 +356,12 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="footer">
-            <p>Built with HTML, CSS & JavaScript</p>
             <p>&copy; <span id="year"></span> Athulkrishna PP. All rights reserved.</p>
         </footer>
     </main>
 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -6,26 +6,26 @@
 }
 
 :root {
-    /* Light Mode Colors */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 217 91% 60%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 217 91% 60%;
+    /* New Light Mode: Ivory + Professional Blue */
+    --background: 40 50% 98%; /* A very light, subtle ivory/cream */
+    --foreground: 222.2 84% 4.9%; /* Dark text, unchanged */
+    --card: 0 0% 100%; /* Pure white, to "float" on the ivory bg */
+    --card-foreground: 222.2 84% 4.9%; /* Dark text, unchanged */
+    --popover: 0 0% 100%; /* Pure white */
+    --popover-foreground: 222.2 84% 4.9%; /* Dark text, unchanged */
+    --primary: 225 70% 50%; /* A solid, professional medium-dark blue */
+    --primary-foreground: 0 0% 100%; /* White text for buttons */
+    --secondary: 225 70% 96%; /* A very light blue for badges */
+    --secondary-foreground: 225 30% 20%; /* Dark blue text for badges */
+    --muted: 225 70% 96%; /* Matches secondary */
+    --muted-foreground: 220 10% 45%; /* A neutral, soft grey for text */
+    --accent: 225 70% 96%; /* Matches secondary */
+    --accent-foreground: 225 30% 20%; /* Matches secondary-foreground */
+    --destructive: 0 84.2% 60.2%; /* Unchanged */
+    --destructive-foreground: 210 40% 98%; /* Unchanged */
+    --border: 225 50% 94%; /* A subtle, soft blue-grey border */
+    --input: 225 50% 94%; /* Matches border */
+    --ring: 225 70% 50%; /* Matches primary */
 }
 
 .dark {
@@ -419,6 +419,7 @@ body:not(.dark) .moon-icon {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none; /* Removed underline */
 }
 
 .btn svg {
@@ -433,7 +434,7 @@ body:not(.dark) .moon-icon {
 }
 
 .btn-primary:hover {
-    background-color: hsl(217, 91%, 55%);
+    background-color: hsl(225, 70%, 45%); /* Slightly darker blue on hover */
     box-shadow: 0 0 30px hsla(var(--primary), 0.6);
     transform: translateY(-2px);
 }
@@ -740,4 +741,9 @@ body:not(.dark) .moon-icon {
     .hero-subtitle {
         font-size: 3rem;
     }
+}
+
+/* NEW: Typed.js Cursor */
+.hero-title .typed-cursor {
+    color: hsl(var(--primary));
 }
